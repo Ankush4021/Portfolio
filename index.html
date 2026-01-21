@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Personal portfolio of a Frontend Developer — projects, skills, and contact." />
+
+    <title>Portfolio | Frontend Developer</title>
+
+    <!--
+      Tip: Replace "Your Name" everywhere with your real name.
+      This site uses no frameworks/libraries — only HTML/CSS/JS.
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <!-- Skip link for keyboard/screen-reader users -->
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- =========================
+      Header / Navigation
+    ========================== -->
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a class="brand" href="#top" aria-label="Go to top">
+                <span class="brand-mark" aria-hidden="true">◆</span>
+                <span class="brand-text">Ankush Kumar</span>
+            </a>
+
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav-toggle-lines" aria-hidden="true"></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Primary">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#skills">Skills</a>
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-cta" href="#contact">Let's talk</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- =========================
+      Main
+    ========================== -->
+    <main id="main">
+        <!-- =========================
+        Hero
+      ========================== -->
+        <section class="section hero" aria-label="Introduction">
+            <div class="container hero-grid">
+                <div class="hero-copy">
+                    <p class="eyebrow">Frontend Developer</p>
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="accent">Ankush Kumar</span> - I build clean, accessible web
+                        experiences.
+                    </h1>
+                    <p class="hero-subtitle">
+                        I design and develop responsive interfaces with a focus on performance, usability, and
+                        thoughtful details. I enjoy turning complex problems into simple, delightful products.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="#projects">View projects</a>
+                        <a class="btn btn-ghost" href="#contact">Contact me</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">Location</span>
+                            <span class="meta-value">Noida, India</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Focus</span>
+                            <span class="meta-value">UI, Accessibility, Performance</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- A simple "profile card" (no image required). Replace with your photo if desired. -->
+                <div class="hero-card" aria-label="Profile highlight">
+                    <div class="card-surface">
+                        <div class="avatar" aria-hidden="true">
+                            <span>AK</span>
+                        </div>
+                        <p class="card-title">Available for freelance</p>
+                        <p class="card-text">
+                            Open to building landing pages, dashboards, and interactive UI components.
+                        </p>
+                        <div class="card-tags" aria-label="Highlights">
+                            <span class="tag">Responsive</span>
+                            <span class="tag">HTML, CSS, JavaScript</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <a class="card-link" href="#contact">Get in touch →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+        About
+      ========================== -->
+        <section class="section" id="about" aria-labelledby="about-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title" id="about-title">About Me</h2>
+                    <p class="section-kicker">
+                        Human-friendly, no buzzwords — just how I work and what I value.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="panel">
+                        <h3 class="panel-title">What I do</h3>
+                        <p class="panel-text">
+                            I'm a frontend developer who enjoys building clean and smooth user interfaces. I focus on
+                            making websites easy to use, visually balanced, and fast to load. I pay attention to small
+                            details like spacing, readability, and subtle interactions that improve the user experience
+                            without feeling distracting.
+                        </p>
+                        <p class="panel-text">
+                            My workflow is simple and practical. I design with real-world use in mind, write clean and
+                            reusable code, and test on different devices to make sure everything works well. I feel most
+                            satisfied when the UI looks good, feels natural to use, and the code remains easy to
+                            understand and maintain.
+                        </p>
+                    </article>
+
+                    <aside class="panel panel-muted" aria-label="Quick facts">
+                        <h3 class="panel-title">Quick facts</h3>
+                        <ul class="facts">
+                            <li><strong>Strength:</strong> Turning designs into clean, responsive interfaces</li>
+                            <li><strong>Values:</strong> clarity, accessibility, performance</li>
+                            <li><strong>Enjoy:</strong> Making small UI improvements that have a big impact</li>
+                        </ul>
+                        <a class="btn btn-small" href="#projects">See my work</a>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+        Skills
+      ========================== -->
+        <section class="section section-alt" id="skills" aria-labelledby="skills-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title" id="skills-title">Skills</h2>
+                    <p class="section-kicker">A focused toolkit for building modern web UIs.</p>
+                </div>
+
+                <div class="skills-grid" role="list">
+                    <div class="skill-card" role="listitem">
+                        <h3 class="skill-title">Core</h3>
+                        <p class="skill-text">Semantic HTML, modern CSS, accessible UI patterns.</p>
+                        <div class="pill-row" aria-label="Core skills">
+                            <span class="pill">HTML5</span>
+                            <span class="pill">CSS, SCSS</span>
+                            <span class="pill">JavaScript</span>
+                            <span class="pill">React</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" role="listitem">
+                        <h3 class="skill-title">UI & UX</h3>
+                        <p class="skill-text">Layout, typography, spacing systems, interaction design.</p>
+                        <div class="pill-row" aria-label="UI skills">
+                            <span class="pill">Responsive Design</span>
+                            <span class="pill">Accessibility</span>
+                            <span class="pill">Design Systems</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-card" role="listitem">
+                        <h3 class="skill-title">Quality</h3>
+                        <p class="skill-text">Performance-minded implementations and maintainable code.</p>
+                        <div class="pill-row" aria-label="Quality skills">
+                            <span class="pill">Performance</span>
+                            <span class="pill">Clean Code</span>
+                            <span class="pill">Cross-browser</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+        Projects
+      ========================== -->
+        <section class="section" id="projects" aria-labelledby="projects-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title" id="projects-title">Projects</h2>
+                    <p class="section-kicker">
+                        Some of my recent work, highlighting my skills and attention to detail.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project-card">
+                        <div class="project-top">
+                            <h3 class="project-title">Dinesh Caterers</h3>
+                            <p class="project-desc">
+                                Developed a modern, responsive website for a catering service business with a clean UI,
+                                service showcase, and seamless user experience. Focused on improving the brand's online
+                                presence and making
+                                information easy to access for customers.
+                            </p>
+                        </div>
+                        <div class="project-tags" aria-label="Tech used">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-primary" href="https://www.dineshcaterers.com/" target="_blank"
+                                rel="noreferrer">
+                                Live demo
+                            </a>
+                            <a class="btn btn-small btn-ghost" href="https://github.com/Ankush4021/Dinesh-Caterers"
+                                target="_blank" rel="noreferrer">
+                                Source
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <h3 class="project-title">Productivity Dashboard </h3>
+                                <p class="project-desc">
+                                    An all-in-one Productivity Dashboard Web App designed to help users stay focused,
+                                    organized, and motivated throughout the day. This dashboard combines essential productivity tools like To-Do List, Pomodoro Timer, Daily Planner, and Motivational Quotes in one clean and modern interface.
+                                </p>
+                        </div>
+                        <div class="project-tags" aria-label="Tech used">
+                            <span class="tag">UI</span>
+                            <span class="tag">Responsive</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-primary" href="https://ankush4021.github.io/Productivity-DashBoard/" target="_blank" rel="noreferrer">
+                                Live demo
+                            </a>
+                            <a class="btn btn-small btn-ghost" href="https://github.com/Ankush4021/Productivity-DashBoard" target="_blank" rel="noreferrer">
+                                Source
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-top">
+                            <h3 class="project-title">Glowing Card Effect</h3>
+                            <p class="project-desc">
+                                A clean card effect that adds a soft glowing border and shadow on hover, giving the design a modern and interactive feel. It highlights content smoothly without being distracting, making it ideal for polished and user-friendly layouts.
+                            </p>
+                        </div>
+                        <div class="project-tags" aria-label="Tech used">
+                            <span class="tag">Animation</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">Vanilla JS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn btn-small btn-primary" href="https://ankush4021.github.io/Cohort2.0Tasks/Tasks/Task11/index.html" target="_blank" rel="noreferrer">
+                                Live demo
+                            </a>
+                            <a class="btn btn-small btn-ghost" href="https://github.com/Ankush4021/Cohort2.0Tasks" target="_blank" rel="noreferrer">
+                                Source
+                            </a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- =========================
+        Contact
+      ========================== -->
+        <section class="section section-alt" id="contact" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title" id="contact-title">Contact</h2>
+                    <p class="section-kicker">
+                        Want to collaborate or have an opportunity? Send a message - I reply quickly.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="panel">
+                        <h3 class="panel-title">Contact</h3>
+                        <p class="panel-text">
+                            <a class="link" href="tel:+918755906346">+91 8755906346</a>
+                        </p>
+                        <h3 class="panel-title">Email</h3>
+                        <p class="panel-text">
+                            <a class="link" href="mailto:thisisankii334@gmail.com">thisisankii334@gmail.com</a>
+                        </p>
+                        
+                    </div>
+
+                    <div class="panel panel-muted">
+                        <h3 class="panel-title">Social</h3>
+                        <ul class="social-links" aria-label="Social links">
+                            <li><a class="link" href="https://github.com/Ankush4021" target="_blank" rel="noreferrer">GitHub</a></li>
+                            <li><a class="link" href="www.linkedin.com/in/ankush-kumar-b07173226" target="_blank" rel="noreferrer">LinkedIn</a></li>
+                            <li><a class="link" href="https://x.com/ankushkumar1815" target="_blank" rel="noreferrer">Twitter/X</a></li>
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- =========================
+      Footer
+    ========================== -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p class="footer-text">
+                © <span id="year"></span> Ankush Kumar. Designed and built with HTML, CSS, and JavaScript.
+            </p>
+            <a class="back-to-top" href="#main">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+
+</html>
